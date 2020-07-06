@@ -15,25 +15,23 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    public Button nextButton;
-    public TextView udvText;
-    public EditText nevadas;
+    public Button playButton;
+    public EditText playerName;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        nextButton = (Button) findViewById(R.id.tovabbButton);
-        udvText = (TextView) findViewById(R.id.welcomeText);
-        nevadas = (EditText) findViewById(R.id.nevmegadoText);
+        playButton = (Button) findViewById(R.id.playButton);
+        playerName = (EditText) findViewById(R.id.playerName);
 
         final Intent intent = new Intent(this, SecondActivity.class);
 
-        nextButton.setOnClickListener(new View.OnClickListener() {
+        playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                if(TextUtils.isEmpty(nevadas.getText().toString())){
+                if(TextUtils.isEmpty(playerName.getText().toString())){
                     Toast.makeText(MainActivity.this,"Add meg a nevedet amivel játszanál",Toast.LENGTH_SHORT).show();
                 }
                 else{
