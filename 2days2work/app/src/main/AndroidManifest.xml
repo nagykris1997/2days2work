@@ -11,7 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".SecondActivity"
             android:theme="@style/AppTheme.noActionBar"
-            android:screenOrientation="fullSensor">
+            android:screenOrientation="sensorLandscape">
 
         </activity>
         <activity android:name=".MainActivity">
