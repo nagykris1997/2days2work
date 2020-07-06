@@ -37,6 +37,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:text="Eredmények"
+        android:clickable="true"
+        android:onClick="getHighscores"
         android:textColor="#FDD835"
         android:layout_margin="16dp"
         android:textSize="24dp" />
